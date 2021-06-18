@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Memory Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/normalize.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap"
+	 rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img id="title" src="https://i.ibb.co/NtvSZyZ/memory-title.png" alt="Memory Game">
+  </header>
+
+	<div id="dialogoverlay"></div>
+	<div id="dialogbox">
+		<div>
+			<div id="dialogboxhead"></div>
+			<div id="dialogboxbody"></div>
+			<div id="dialogboxfoot"></div>
+		</div>
+	</div>
+
+  <section class="game-setup">
+  <p><span class="bold">Instructions</span>: Click on the cards to reveal their color. Try to match the color pairs in as few attempts as possible.</p>
+  <p><span class="bold">Difficulty</span>: Select a difficulty level between five and twelve, corresponding to the number of matching color pairs.</p>
+    <div id="difficulty-range">
+      <span class="bold">5</span><input id="difficulty" type="range" min="5" max="12" value="8" step="1" list="tickmarks"/><span class="bold">12</span>
+      <datalist id="tickmarks">
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+      </datalist>
+    </div>
+  </section>
+
+  <section class="score-panel">
+    <ul>
+      <li id="timeElapsed" class="timeElapsed"><span class="bold">Time Elapsed</span>: <span id="secondsElapsed">0</span> s</li>
+      <li class="moves"><span class="bold">Moves</span>:
+      <span id="moves">0</span></li> 
+      <li class="matches"><span class="bold">Matches</span>:
+      <span id="matches">0</span>/<span id="pairs">8</span></li>
+    </ul>
+  </section>
+
+  <div id = container>
+    <div id="game"></div>
+  </div>
+
+  <section class="control-panel">
+    <ul>
+      <li><button class="restart"><i class="fa fa-repeat"></i> Restart</button>
+      <li><button class="showCards"><i class="fa fa-eye"></i> Show Cards</button></li>
+      </li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

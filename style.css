@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+body {
+  padding: 1.5%;
+}
+
+#title {
+  display: block;
+  margin: 1.5% auto 3.5% auto;
+  width: 50%;
+}
+
+.game-setup > p {
+  margin: 3% 0.25% 0.25% 0.25%;
+}
+
+.game-setup {
+   width: 75%;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin-bottom: 2.5%;
+}
+
+#difficulty-range {
+  text-align: center;
+}
+
+input[type=range] {
+  width: 50%;
+  margin: 1%;
+}
+
+span.bold {
+  font-weight: 700; 
+}
+
+.score-panel, .control-panel {
+  margin: 2% 0;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 2%;
+}
+
+#container{
+  text-align: center;
+  background-color: black;
+  border-radius: 2.5%;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 23.5%;
+  height: 15vw;
+  margin: 0.5%;
+  display: inline-block;
+  position: relative;
+}
+
+.card{
+  border-radius: 5%;
+}
+
+.card-back{
+  background: url('https://i.ibb.co/P50cn9X/memory-logo2.png');
+  background-size: 100%;     
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-back:hover{
+  transform: scale(0.75);
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.delay-click {
+  pointer-events: none;
+}
+
+.fa {
+  color: #0075FF
+}
+
+.control-panel button {
+  font-size: 90%;
+}
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:75%;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:5px; }
+#dialogbox > div > #dialogboxhead{ background: #FFF; font-size:19px; padding:20px; color:#000; text-align:center;}
+#dialogbox > div > #dialogboxbody{ background: #000; padding:20px; color:#FFF; text-align:center; }
+#dialogbox > div > #dialogboxfoot{ background: #FFF; padding:10px; text-align:center; }
+
+/*MEDIA*/
+@media (min-width: 0) {
+  * {
+  font-size: 11px;
+  }
+}
+
+@media (min-width: 300px) {
+  * {
+  font-size: 12px;
+  }
+}
+
+@media (min-width: 500px) {
+  * {
+  font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  * {
+  font-size: 16px;
+  }
+}
+
+@media (min-width: 720px) {
+  * {
+  font-size: 17px;
+  }
+}
